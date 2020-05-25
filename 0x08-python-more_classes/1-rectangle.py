@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-0-rectangle
+
     Classes:
         * Rectangle
 """
@@ -8,7 +8,8 @@
 
 class Rectangle:
     """
-    Rectangle functions and data
+    Rectangle:
+
     """
     def __init__(self, width=0, height=0):
         """__init__: constructor"""
@@ -17,8 +18,7 @@ class Rectangle:
 
     @property
     def width(self):
-    """ Setter for width
-        """
+        """width"""
         return self.__width
 
     @width.setter
@@ -33,12 +33,12 @@ class Rectangle:
 
     @property
     def height(self):
-        """height: retrieve the height"""
+        """height"""
         return self.__height
 
     @height.setter
     def height(self, value):
-        """height: set height"""
+        """ set height"""
         if type(value) is not int:
             raise TypeError("height must be an integer")
 
@@ -46,3 +46,4 @@ class Rectangle:
             raise ValueError("height must be >= 0")
 
         self.__height = value
+        
