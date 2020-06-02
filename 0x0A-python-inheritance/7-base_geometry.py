@@ -6,15 +6,17 @@ class BaseGeometry:
 
     """ BaseGeometry class """
 
+class BaseGeometry:
+    """BaseGeometry class"""
 
-def area(self):
-    """ def calculate area"""
-raise Exception("area() is not implemented")
+    def area(self):
+        """method for calculated area"""
+        raise Exception("area() is not implemented")
 
+    def integer_validator(self, name, value):
+        """Method for validate if a num is integer"""
 
-def integer_validator(self, name, value):
-    """  validate value      """
-    if type(value) is not int:
-          raise TypeError("{} must be an integer".format(name))
+        if type(value) is not int:
+            raise TypeError("{} must be an integer".format(name))
         if value <= 0:
-                raise ValueError("{} must be greater than 0".format(name))
+            raise ValueError("{} must be greater than 0".format(name))
