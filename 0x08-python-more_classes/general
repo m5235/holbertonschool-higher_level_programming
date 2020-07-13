@@ -1,0 +1,21 @@
+#pythoniscool :))
+- Qu'est-ce que l'OOP
+- "tout de première classe"
+- Qu'est-ce qu'une classe
+-Qu'est-ce qu'un objet et une instance
+ -Quelle est la différence entre une classe et un objet ou une instance
+-Qu'est-ce qu'un attribut
+-Quels sont et comment utiliser les attributs publics, protégés et privés
+-Qu'est-ce que l'auto
+-Qu'est-ce qu'une méthode
+-Quelle est la méthode spéciale __init__ et comment l'utiliser
+-Qu'est-ce que l'abstraction de données, l'encapsulation de données et la dissimulation d'informations
+-Qu'est-ce qu'un bien ?
+-Quelle est la différence entre un attribut et une propriété en Python
+-Quelle est la façon pythonienne d'écrire les getters et les setters en Python
+-Comment créer dynamiquement de nouveaux attributs arbitraires pour les instances existantes d'une classe
+-Comment lier les attributs à l'objet et aux classes
+-Qu'est-ce que le __dict__ d'une classe et/ou d'une instance d'une classe et que contient-il
+-Comment Python trouve-t-il les attributs d'un objet ou d'une classe
+-Comment utiliser la fonction getattr
+
