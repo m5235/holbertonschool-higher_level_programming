@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 """
-Task four
+error_code
 """
-import urllib.request
+from urllib import request
+import urllib.error
 import sys
 
 
