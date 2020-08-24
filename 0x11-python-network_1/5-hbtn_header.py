@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-takes in a URL, sends a request to the URL 
+takes in a URL, sends a request to the URL
 """
 import requests
 import sys
