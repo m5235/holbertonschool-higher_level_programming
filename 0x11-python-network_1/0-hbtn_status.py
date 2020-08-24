@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """
- script that fetches
+script that fetches
 """
-from urllib import request
+import urllib.request
 
 
 if __name__ == "__main__":
