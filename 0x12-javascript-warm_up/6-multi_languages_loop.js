@@ -1,7 +1,8 @@
 #!/usr/bin/node
+//using an array of string and a loop
 
-const array = ['C is fun', 'Python is cool', 'Javascript is amazing'];
+const aray = ['C is fun', 'Python is cool', 'Javascript is amazing'];
 
 for (let i = 0; i < 3; i++) {
-  console.log(array[i]);
+  console.log(aray[i]);
 }
