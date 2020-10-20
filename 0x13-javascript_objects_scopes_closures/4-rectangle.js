@@ -27,5 +27,4 @@ module.exports = class Rectangle {
     this.height *= 2;
     this.width *= 2;
   }
-}
-
+};
