@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-const dic = module.require('./101-data.js').dic;
+const dic = module.require('./101-data.js').dict;
 const Newdic = {};
 
 for (const k in dic) {
