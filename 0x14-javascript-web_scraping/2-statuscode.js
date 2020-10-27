@@ -1,9 +1,10 @@
 #!/usr/bin/node
+const fs = require('fs');
+const f = process.argv[2];
+const fun = process.argv[3];
 
-const request = require('request');
-const url = process.argv[2];
-request(url, (error, r, body) => {
-    if (error) { return console.log(error); }
-    console.log('code: ' + r.statusCode);
+fs.writeFile(f, fun, 'utf-8', (error) => {
+  if (error) {
+    console.log(error);
   }
 });
