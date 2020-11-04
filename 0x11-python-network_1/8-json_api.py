@@ -1,23 +1,23 @@
 #!/usr/bin/python3
-""" task 9
+"""
+Uses requests module. Prints error code
 """
 import requests
-import sys
+from sys import argv
+
+
 if __name__ == "__main__":
-
-
-
     url = "http://0.0.0.0:5000/search_user"
- # take argument
-
-    data = {"q": argv[1][0] if len(argv) > 1 else ""}
-    response = requests.post(url, data=data)
-
     try:
-        d = response.json()
-        if not d:
-            print("No result")
-        else:
-            print("[{}] {}".format(d.get("id"), d.get("name")))
+        q = sys.argv[1]
+    except:
+        q = ""
+
+    values = {'q': q}
+    r = requests.post(url, values)
+    try:
+        print("[{}] {}".format(r.json()["id"], r.json()["name"]))
+    except KeyError:
+        print("No result")
     except ValueError:
         print("Not a valid JSON")
