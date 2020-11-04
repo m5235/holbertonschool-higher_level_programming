@@ -1,10 +1,11 @@
 #!/usr/bin/python3
 """ task 9
 """
-if __name__ == "__main__":
-
 import requests
 import sys
+if __name__ == "__main__":
+
+
 
     url = "http://0.0.0.0:5000/search_user"
  # take argument
