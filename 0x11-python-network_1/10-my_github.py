@@ -1,14 +1,15 @@
 #!/usr/bin/python3
-""" task 10
+
+
+"""
+task 10
 """
 import requests
 import sys
+from requests.auth import HTTPBasicAuth
+
 
 if __name__ == "__main__":
-    url = "https://api.github.com/user"
-    auth = (argv[1], argv[2])
-    response = requests.get(url, auth=auth)
-    try:
-        print(response.json().get("id"))
-    except :
-        print("Not a valid JSON")
+    url = 'https://api.github.com/user'
+    r = requests.get(url, auth=HTTPBasicAuth(sys.argv[1], sys.argv[2]))
+    print(r.json().get('id'))
