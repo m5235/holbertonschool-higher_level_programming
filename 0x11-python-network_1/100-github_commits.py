@@ -3,9 +3,8 @@
 task 11
 """
 if __name__ == '__main__':
-
     import requests
-    import sys
+    from sys import argv
     r = requests.get('https://api.github.com/repos/{}/{}/commits'
                      .format(argv[2], argv[1]))
     commits = r.json()
