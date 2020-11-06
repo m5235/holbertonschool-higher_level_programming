@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
- task adv
+ task 102
 """
 from relationship_city import City
 from relationship_state import Base, State
@@ -16,6 +16,6 @@ if __name__ == "__main__":
     session = Session(engine)
     state = session.query(State).order_by(State.id).all()
     for stt in state:
-        for c in stt.cities:
-            print("{}: {} -> {}".format(c.id, c.name, stt.name))
+        for cit in stt.cities:
+            print("{}: {} -> {}".format(cit.id, cit.name, stt.name))
     session.close()
