@@ -1,19 +1,29 @@
 #!/usr/bin/python3
-
 """
-task 0
+task 1
 """
-import MySQLdb
-import sys
-
 
 if __name__ == "__main__":
+    import MySQLdb as mysql
+    from sys import argv as args
+
+    # assign args to variables
+    mysql_username = args[1]
+    mysql_password = args[2]
+    db_name = args[3]
+
     # connect to Mysql server
-    db = MySQLdb.connect(host="localhost", port=3306,
-                         user=argv[1], passwd=argv[2], db=argv[3])
-    cur = db.cursor()
-    num_rows = cur.execute("SELECT * FROM states ORDER BY states.id")
-    for i in range(num_rows):
-        print(row)
-    cur.close()
-    con.close()cat
+    database = mysql.connect(
+        host="localhost",
+        user=mysql_username,
+        passwd=mysql_password,
+        db=db_name)
+
+    cursor = database.cursor()
+    cursor.execute("SELECT * FROM states WHERE name LIKE 'N%';\
+                    ORDER BY state.id")
+
+    result = cursor.fetchall()
+    for i in result:
+        if i[1][0] == "N":
+            print(i)
