@@ -1,19 +1,16 @@
 #!/usr/bin/python3
-
 """
 task 1
 """
-import sys
-import MySQLdb
-
 if __name__ == "__main__":
+    import sys
+    import MySQLdb
 
-    # connect to Mysql server
-    db = MySQLdb.connect(
+    database = MySQLdb.connect(
             host="localhost",
             port=3306,
-            user_name=sys.argv[1],
-            Mypasswd=sys.argv[2],
+            user=sys.argv[1],
+            passwd=sys.argv[2],
             db=sys.argv[3],
             charset="utf8"
             )
@@ -26,4 +23,4 @@ if __name__ == "__main__":
     for row in query:
         print(row)
     cursor.close()
-    db.close()
+    database.close()
