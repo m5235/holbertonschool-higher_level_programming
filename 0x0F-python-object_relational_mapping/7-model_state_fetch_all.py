@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-task7
+task 7
 """
 
 import sys
